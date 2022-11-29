@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-title>
+      Bienvenido
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input text="text" [(ngModel)]="Users.correo" placeholder="Ingresar Correo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Clave</ion-label>
+        <ion-input type="password" [(ngModel)]="Users.contrasena" placeholder="Ingresar clave"></ion-input>
+      </ion-item>
+      <ion-button (click)="login()">Entrar</ion-button>
+      <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+    </div>
+  </ion-content>

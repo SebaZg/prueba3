@@ -1,0 +1,55 @@
+<ion-content>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Registro
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Login</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <div id="container"> 
+      <ion-item>
+        <ion-label position="floating">Nombre completo</ion-label>
+        <ion-input text="text" [ngModel]="data.nombre" placeholder="Ingresar nombre completo"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Rut</ion-label>
+        <ion-input text="string" [ngModel]="" placeholder="Ingresar rut"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input type="number" [ngModel]="data.edad" placeholder="Ingresar edad"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Direccion</ion-label>
+        <ion-input type="text" [ngModel]="" placeholder="Ingresar direccion"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="text" [ngModel] placeholder="Ingresar correo"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Contrasena</ion-label>
+        <ion-input type="password" [ngModel] placeholder="Ingresar contraseña"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-label position="floating">Telefono</ion-label>
+        <ion-input type="number" [ngModel] placeholder=" Telefono "></ion-input>
+      </ion-item>
+
+
+        <ion-button (click)="agregarAlgo()">Registrar</ion-button>
+    </div>
+  </ion-content>
